@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Process Enrollment";
+}
+
+<h2>Please enter the code you received via SMS and click <strong>Complete</strong></h2>
+
+@using (Html.BeginForm("UpdateEnrollment", "Home", FormMethod.Post))
+{
+    <input type="text" value="" name="smsCode" maxlength="6" required />
+    <input type="submit" class="btn btn-success" value="Complete" />
+}
