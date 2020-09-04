@@ -18,10 +18,13 @@ Detailed design documentation (follow link above to access) provides you with a 
 
 This repository also contains reference implementation developed using [.NET Core](https://dotnet.microsoft.com/), and is provided to accelerate development of that part of the design which deals with actual re-enrollment of SMS factors. This implementation is provided free of charge and without warranty either explicit or implied. 
 
+## Getting Started
 
-### Auth0 Configuration
+You will need .NET Core 2.1 installed to run the sample.
 
-The [Tenant](tenant) folder contains reference Auth0 Tenant configuration and asset definitions that can be used as a basis to build out functionality in order to support Verified Email Address Change. For further details please refer to the [readme](Tenant) contained in the folder.
+Download or clone the repository to your local machine and open the .sln file in Visual Studio.
+
+Update the config json file with your own config values and run the sample.
 
 ## About Auth0
 
