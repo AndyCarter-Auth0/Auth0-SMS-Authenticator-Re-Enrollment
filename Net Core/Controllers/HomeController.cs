@@ -53,7 +53,7 @@ namespace NetCore.Controllers
 
             // Create the redirect URL to request an MFA access token for the user, using the credentials of the MFA application
             var nonce = new Guid().ToString();
-            var redirect = $"https://{_domain}/authorize?grant_type=authorization_code&response_mode=form_post&response_type=code token id_token&client_id={_clientId}&client_secret={_clientSecret}&audience={_audience}&scope={_scopes}&redirect_uri={_redirectUri}&nonce={nonce}&state={state}";
+            var redirect = $"https://{_domain}/authorize?grant_type=authorization_code&response_mode=form_post&response_type=code token id_token&client_id={_clientId}&audience={_audience}&scope={_scopes}&redirect_uri={_redirectUri}&nonce={nonce}&state={state}";
 
             // Redirect the user
             return Redirect(redirect);
